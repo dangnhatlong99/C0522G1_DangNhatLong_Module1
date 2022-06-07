@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT1</title>
+</head>
+<body>
+<SCRIPT>
+    let inputPhysics = prompt("Vật Lý");
+    let inputBiological = prompt("Sinh Học");
+    let inputMath = prompt("Toán");
+    let physic = parseInt(inputPhysics)
+    let bio = parseInt(inputBiological)
+    let math = parseInt(inputMath)
+    let sum = physic + math + bio
+    let avr = sum / 3
+    document.write("Tổng: " + sum +"<br>")
+    document.write("Trung Bình: " + avr+"<br>")
+    let inputCelius = prompt("Độ C");
+    let celius = parseInt(inputCelius)
+    let convert = celius / 5 * 9 + 32
+    document.write("Chuyển đổi C sang F: " + convert+ "<br>")
+    let inputRadius = prompt("Bán Kính");
+    let radius = parseInt(inputRadius)
+    let area = (Math.PI * Math.pow(radius,2)).toFixed(2)
+    document.write("Diện tích hình tròn: " + area + "<br>")
+    let peri = (2* radius * Math.PI).toFixed(2)
+    document.write("Chu vi hình tròn:" + peri+ "<br>")
+</SCRIPT>
+
+</body>
+</html>

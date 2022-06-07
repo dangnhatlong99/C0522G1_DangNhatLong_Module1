@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh tong</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>số 1</td>
+        <td>
+            <input type="number" id="num1">
+        </td>
+    </tr>
+    <tr>
+        <td>số 2</td>
+        <td>
+            <input type="number" id="num2">
+        </td>
+    </tr>
+    <tr>
+        <td>số 3</td>
+        <td>
+            <input type="number" id="num3">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="add()">Tổng</button>
+        </td>
+        <td>
+            <span id="result"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="avg()">Trung Bình</button>
+        </td>
+        <td>
+            <span id="avg"></span>
+        </td>
+    </tr>
+</table>
+<script>
+    function add() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let num3 = document.getElementById("num3").value;
+        let sum = parseInt(num1) + parseInt(num2) + parseInt(num3); //100
+        document.getElementById("result").innerText = sum+"";
+    }
+    function avg() {
+        let avg = parseInt(document.getElementById("result").innerText)  / 3;
+        document.getElementById("avg").innerText = avg+"";
+    }
+</script>
+
+</body>
+</html>
