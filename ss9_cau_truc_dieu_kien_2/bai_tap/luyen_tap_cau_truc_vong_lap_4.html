@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<script>
+    let inputNum1= prompt("Nhập số 1")
+    let inputNum2= prompt("Nhập số 2")
+    let inputNum3= prompt("Nhập số 3")
+    if (parseInt(inputNum1)>inputNum2){
+        if (parseInt(inputNum1)>parseInt(inputNum3)){
+            alert("Số 1 là số lớn nhất")
+        }else if (parseInt(inputNum1)===parseInt(inputNum3)){
+            alert("Số 1 và Số 3 là số lớn nhất")
+        }
+        else {
+            alert("Số 3 là số lớn nhất")
+        }
+    }else if (parseInt(inputNum1)<parseInt(inputNum2)){
+        if (parseInt(inputNum2)>parseInt(inputNum3)){
+            alert("Số 2 là số lớn nhất")
+        }else if (parseInt(inputNum2)===parseInt(inputNum3)){
+            alert("Số 2 và Số 3 là số lớn nhất")
+        } else {
+            alert("Số 3 là số  lớn nhất")
+        }
+    } else {
+        if (parseInt(inputNum1)>parseInt(inputNum3)){
+            alert("Số 1 và Số 2 lớn nhất")
+        }else {
+            alert("Cả 3 sô có giá trị như nhau")
+        }
+    }
+</script>
+<body>
+
+</body>
+</html>

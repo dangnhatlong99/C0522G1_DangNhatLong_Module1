@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<script>
+    let inputFirst = prompt("điểm kiểm tra")
+    let inputMid = prompt("điểm giữa kỳ")
+    let inputLate = prompt("điểm cuối kỳ")
+    if ((parseInt(inputFirst)+parseInt(inputMid)+parseInt(inputLate))/3 >75){
+        alert("Grade A")
+    }else if ((parseInt(inputFirst)+parseInt(inputMid)+parseInt(inputLate))/3 <75){
+        if ((parseInt(inputFirst)+parseInt(inputMid)+parseInt(inputLate))/3 <50){
+            alert("Grade C")
+        }else {
+            alert("Grade B")
+        }
+
+    }
+</script>
+
+</body>
+</html>

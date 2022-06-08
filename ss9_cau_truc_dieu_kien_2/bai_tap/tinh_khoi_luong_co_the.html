@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Height</td>
+        <td>&emsp;</td>
+        <td>
+            <input type="number" id="height">
+        </td>
+    </tr>
+    <tr>
+        <td>Weight</td>
+        <td>&emsp;</td>
+        <td>
+            <input type="number" id="weight">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="caculator()">Tính toán</button>
+        </td>
+        <td>
+            <span id="caculator"></span>
+        </td>
+    </tr>
+</table>
+<script>
+    function caculator() {
+        let weight = document.getElementById("weight").value;
+        let height = document.getElementById("height").value;
+        let caculator = parseInt(weight) / (parseInt(height) ^ 2);
+        console.log(caculator)
+        if (parseInt(caculator) > 30){
+            document.getElementById("caculator").innerHTML = "Obese"
+        }else if (parseInt(caculator) >=25){
+            document.getElementById("caculator").innerHTML = "Overweight"
+        }else if (parseInt(caculator) > 18){
+        document.getElementById("caculator").innerHTML = "Normal"
+        }else {
+            document.getElementById("caculator").innerHTML = "Underweight"
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>
