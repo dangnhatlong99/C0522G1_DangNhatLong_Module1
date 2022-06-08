@@ -7,13 +7,13 @@
 <body>
 <form>
     <label>
-<input type="text" id="display">
+        <input type="text" id="display">
     </label>
 </form>
 <table>
     <tr>
         <td>
-            <button type="button" value="9" onclick=9>9</button>
+            <button type="button" id="9" onclick="clickMe()">9</button>
         </td>
         <td>
             <button type="button">8</button>
@@ -69,7 +69,11 @@
     </tr>
 </table>
 <script>
-
+    function clickMe() {
+        const value = document.getElementById("9").innerText;
+        console.log(value)
+        document.getElementById("display").innerHTML = value;
+    }
 </script>
 
 </body>
