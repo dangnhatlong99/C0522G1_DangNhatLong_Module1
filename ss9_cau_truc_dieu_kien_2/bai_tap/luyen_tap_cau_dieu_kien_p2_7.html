@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    let inputA = parseInt(prompt("Nhập A"))
+    let inputB = parseInt(prompt("Nhập B"))
+    let inputC = parseInt(prompt("Nhập C"))
+    let delta = Math.pow(inputB,2) - 4 *inputA * inputC
+    console.log(delta)
+    if (delta > 0){
+        let equation1= (-inputB+ Math.sqrt(delta))/(2*inputA)
+        let equation2= (-inputB- Math.sqrt(delta))/(2*inputA)
+        alert("Phương trình có 2 nghiệm "+equation1 +" và "+ equation2)
+
+    }else if (delta == 0) {
+        let equation3 = (-inputB) / (2 * inputA)
+        alert("Phương trình có nghiệm kép " + equation3)
+    }else {
+        alert("Phương trình vô nghiệm")
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 11</title>
+</head>
+<body>
+<script>
+    let salary =parseInt(prompt("Nhập lương (triệu đồng)"))
+    let salary1 = salary < 60 && salary >0
+    let salary2 = salary < 120 && salary >= 61
+    let salary3 = salary <= 216 && salary >= 120
+    let salary4 = salary <= 384 && salary > 216
+    let salary5 = salary <= 624 && salary > 384
+    let salary6 = salary <= 960 && salary > 624
+    let salary7 = salary >960
+    switch (true) {
+        case salary1:
+            alert("Thuế thu nhập cá nhân : "+ salary * 0.05 + " tr VNĐ");break
+        case salary2:
+            alert("Thuế thu nhập cá nhân : "+ salary * 0.1 + " tr VNĐ");break
+        case salary3:
+            alert("Thuế thu nhập cá nhân : "+ salary * 0.15 + " tr VNĐ");break
+        case salary4:
+            alert("Thuế thu nhập cá nhân : "+ salary * 0.2 + " tr VNĐ");break
+        case salary5:
+            alert("Thuế thu nhập cá nhân : "+ salary * 0.25 + " tr VNĐ");break
+        case salary6:
+            alert("Thuế thu nhập cá nhân : "+ salary * 0.3 + " tr VNĐ");break
+        case salary7:
+            alert("Thuế thu nhập cá nhân : "+ salary * 0.35 + " tr VNĐ");break
+    }
+</script>
+</body>
+</html>
