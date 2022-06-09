@@ -5,13 +5,34 @@
     <title>bài 12</title>
 </head>
 <body>
+
+<p>Số tiền ban đầu:</p>
+<label>
+<input id="money" type="number" name="">
+</label>
+<p>Lãi suất hàng năm(%):</p>
+<label>
+<input id="interest" type="number" name="">
+</label>
+<p>Số năm:</p>
+<label>
+<input id="year" type="number" name="">
+</label>
+<p>Số lần lấy lãi trong năm:</p>
+<label>
+<input id="add" type="number" name=""><br>
+</label>
+<br>
+<button type="button" onclick="interestRate()">Tính Lãi</button>
+<p id="result"></p>
 <script>
-    let inputMoney = parseInt(prompt("Nhập số tiền"))
-    let inputMonth = parseInt(prompt("Gửi trong bao lâu"))
-    if (inputMonth <6 && inputMonth > 0){
-        alert("Số tiền lãi bạn nhận được là: "+ inputMoney*0.00125*inputMonth + "VNĐ")
-    }else {
-        alert("Số tiền lãi bạn nhạn được là : "+ inputMoney*0.00625*inputMonth + "VNĐ")
+    function interestRate() {
+        let p = document.getElementById('money').value;
+        let i = document.getElementById('interest').value;
+        let n = document.getElementById('year').value;
+        let m = document.getElementById('add').value;
+        let result = p * (Math.pow(1 + i / 100 / m, (n * m)));
+        document.getElementById('result').innerHTML = result+"";
     }
 </script>
 </body>
