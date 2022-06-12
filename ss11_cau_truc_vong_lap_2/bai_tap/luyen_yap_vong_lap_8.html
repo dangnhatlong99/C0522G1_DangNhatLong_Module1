@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 8</title>
+
+</head>
+<body>
+<button onclick="button()" id="button">chơi</button>
+<script>
+    // console.log(Math.floor(Math.random()*11) )
+    function button() {
+
+
+        let range = parseInt(prompt("Nhập số trong khoảng"));
+        let result = Math.floor(Math.random()*(range+1));
+        console.log(result)
+        let count = 0;
+        do {
+            let choose = parseInt(prompt("Nhập số của bạn :"));
+            if (choose>result){
+                alert("so ban chon lon hon xin moi doan lai");
+                count ++ //count =1
+                if (count==3){
+                    alert("het luot choi");
+                    break
+                }
+            }else if (choose<result){
+                alert("so ban chon be hon xin moi doan lai")
+                count ++
+                if (count==3){
+                    alert("het luot choi");
+                    break
+                }
+            }else {
+                alert("Ban doan dung");
+                break;
+            }
+        }while (count<=3)
+
+
+    }
+</script>
+</body>
+</html>
