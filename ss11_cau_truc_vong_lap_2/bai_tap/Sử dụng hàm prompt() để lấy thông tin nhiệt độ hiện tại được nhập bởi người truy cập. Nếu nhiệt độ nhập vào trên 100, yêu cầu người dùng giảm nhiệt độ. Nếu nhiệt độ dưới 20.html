@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<script>
+        let inputCelius = Number(prompt("Nhập vào nhiệt độ"))
+        while (inputCelius < 20 || inputCelius > 100) {
+            if (inputCelius < 20) {
+                alert("Nhiệt độ quá lạnh")
+                inputCelius = Number(prompt("Nhập vào nhiệt độ"))
+            } else if (inputCelius > 100) {
+                alert("Nhiệt độ quá nóng")
+                inputCelius = Number(prompt("Nhập vào nhiệt độ"))
+            }
+        }
+        alert("Nhiệt độ bình thường")
+
+</script>
+</body>
+</html>

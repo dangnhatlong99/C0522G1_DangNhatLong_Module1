@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 4</title>
+</head>
+<body>
+<script>
+    let seed = 0 , seed1= 0, seed2=0
+    let div5 = ""
+    let fibonacci = "";
+    for (let i=0; i<20;i++) {
+        if (i == 0) {
+            seed = 1
+            seed1 = 1
+            fibonacci += seed + " "
+        } else {
+            seed = seed1 + seed2;
+            seed1 = seed2
+            seed2 = seed
+            fibonacci += seed + " "
+            if (seed % 5 == 0) {
+                div5 = seed;
+                break
+            }
+        }
+    }
+    document.write("Sô chia hết cho 5 trong dãy là "+div5)
+</script>
+</body>
+</html>
