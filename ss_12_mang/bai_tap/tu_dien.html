@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><input type="text"id="display"></p>
+<span>
+    <button type="button" onclick="trans()" id="trans">Dịch</button>
+</span>
+<span>
+    <p id="result"></p>
+</span>
+<script>
+    let vie = ["Chuoi", "Tao", "Cam"];
+    let eng = ["Banana", "Apple", "Orange"]
+
+    function trans() {
+        let string = document.getElementById("display").value.toLowerCase();
+        let stt = false
+        for (let i=0;i<vie.length;i++){
+            if (string === vie[i].toLowerCase()){
+                stt = true;
+                document.getElementById("result").innerText = eng[i]
+                break
+            }else {
+                stt = false
+                }
+            }
+        if (stt == false){
+            document.getElementById("result").innerText = "K tim thay"
+        }
+    }
+
+</script>
+</body>
+</html>
