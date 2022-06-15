@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 8</title>
+</head>
+<body>
+<script>
+  let inputNum = [11, 5, 33, 21, 20]
+  for (let i = 0; i < inputNum.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (inputNum[i] > inputNum[j]) {
+        let change = inputNum[i];
+        inputNum[i] = inputNum[j];
+        inputNum[j] = change;
+      }
+    }
+  }
+  document.write(inputNum)
+</script>
+</body>
+</html>

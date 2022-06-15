@@ -6,18 +6,18 @@
 </head>
 <body>
 <script>
-    let inputNum = [1, 2, 3, 2, 1];
+    let inputNum = [1, 2, 3, 4];
     let maxNum = inputNum[0];
-    let index = 0
+    let sum = 0
     for (let i = 0; i < inputNum.length; i++) {
+        sum += inputNum[i] / inputNum.length
         if (maxNum < inputNum[i]) {
-            maxNum = inputNum[i]
-            index = i
-
+            maxNum = inputNum[i];
         }
     }
-    document.write("số lớn nhất là " + maxNum + "<br>" + "vị trí nằm ở số " + index)
-</script>
+    document.write("Giá trị trung bình là: " + sum + "<br>" + "số lớn nhất là: " + maxNum)
 
+
+</script>
 </body>
 </html>
