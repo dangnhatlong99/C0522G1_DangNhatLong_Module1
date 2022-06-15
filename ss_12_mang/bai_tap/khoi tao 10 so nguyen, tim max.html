@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputNum = [1, 2, 3, 4, 5];
+    let maxNum = inputNum[0];
+    let index = 0
+    for (let i = 0; i < inputNum.length; i++) {
+        if (maxNum < inputNum[i]) {
+            maxNum = inputNum[i]
+            index = i
+
+        }
+    }
+    document.write("số lớn nhất là " + maxNum + "<br>" + "vị trí nằm ở số " + index)
+</script>
+
+</body>
+</html>
