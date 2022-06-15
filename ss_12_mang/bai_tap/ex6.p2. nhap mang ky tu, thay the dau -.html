@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let inputNum = prompt("Input text: ");
+  let arrayNum = inputNum.split("");
+  for (let i = 0; i < arrayNum.length; i++) {
+    if (arrayNum[i] === "-") {
+      arrayNum[i] = "_";
+    }
+  }
+  document.write("Sau khi doi: " + arrayNum.join(""));
+</script>
+</body>
+</html>

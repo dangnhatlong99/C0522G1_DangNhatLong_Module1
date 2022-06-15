@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let inputA = prompt("Nhap chuoi a");
+    let inputB = prompt("Nhap chuoi b");
+    let count = 0;
+    if (inputA.length == inputB.length) {
+        for (let i = 0; i < inputA.length; i++) {
+            if (inputA[i] == inputB[i]) {
+                count++
+
+            }
+        }
+        if (count == inputA.length) {
+            document.write("giong nhau")
+        } else {
+            document.write("ko giong nhau")
+        }
+    } else {
+        document.write("ko giong nhau")
+    }
+
+</script>
+</body>
+</html>

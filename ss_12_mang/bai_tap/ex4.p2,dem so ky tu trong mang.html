@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 4</title>
+</head>
+<body>
+<script>
+    let inputText = ["1 2 3 4 5 6"];
+    let wordCount = 0;
+    inputText = inputText + " ";
+    for (let i = 0; i < inputText.length; i++) {
+        if (inputText[i] !== " " && inputText[i + 1] == " ") {
+            wordCount++
+        }
+    }
+    document.write(wordCount)
+    // function WordCount(str) {
+    //     return str.split(" ").length;
+    // }
+    //
+    // console.log(WordCount("hello world"));
+</script>
+</body>
+</html>
