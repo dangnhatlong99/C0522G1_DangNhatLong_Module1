@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function proConfirm(answer) {
+    let result ="";
+    if (answer){
+      result = "Good Job!";
+    }else{
+      result = "Maybe Next Time";
+    }
+    return result;
+  }
+  let confirmAnswer = confirm("Play Again ?")
+  let theAnswer = proConfirm(confirmAnswer);
+  alert(theAnswer)
+</script>
+</body>
+</html>
