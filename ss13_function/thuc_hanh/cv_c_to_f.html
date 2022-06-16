@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>convert c to f</title>
+</head>
+<body>
+<p>chuyen doi nhiet do</p>
+<p>Do F</p>
+<p>
+    <input type="number" id="temp">
+</p>
+<button onclick="convertFToC()" id="convert">convert</button>
+<p id="result"></p>
+<script>
+    function convertFToC() {
+        let input = parseFloat(document.getElementById("temp").value) ;
+         document.getElementById("result").innerText= (input-32)/1.8+ ' C';
+
+    }
+
+</script>
+</body>
+</html>
