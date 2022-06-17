@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<script>
+    let inputF = parseFloat(prompt("Nhạp foot"))
+    let inputM = parseFloat(prompt("Nhạp Meter"))
+    met(inputF);
+    foot(inputM);
+
+    function met(numberM) {
+        numberM = 0.305 * inputF;
+        return numberM;
+    }
+
+    function foot(numberF) {
+        numberF = 3.279 * inputM;
+        return numberF;
+    }
+
+    document.write(inputF + " F = " + met() + " M" + "<br>")
+    document.write(inputM + " M = " + foot() + " F")
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baì 5</title>
+</head>
+<body>
+<script>
+    function compare() {
+        let inputA = parseFloat(prompt("input A"));
+        let inputB = parseFloat(prompt("input B"));
+        let inputC = parseFloat(prompt("input C"));
+        if (inputA < inputB) {
+            if (inputA < inputC) {
+                min = inputA;
+            } else {
+                min = inputC;
+            }
+        } else if (inputB < inputC) {
+            min = inputB;
+        } else {
+            min = inputC;
+        }
+        return min
+    }
+
+    document.write("số nhỏ nhất là: " + compare())
+</script>
+</body>
+</html>

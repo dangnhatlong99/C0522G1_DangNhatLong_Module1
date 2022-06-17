@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 9</title>
+</head>
+<body>
+<script>
+    let inputArray = ["a", 1, 2, 1]
+    let inputText = prompt("Nhap chu bat ky")
+
+    function checkArray(inputArray) {
+        let count = 0;
+        for (i = 0; i < inputArray.length; i++) {
+            if (inputArray[i] == inputText) {
+                count++
+            }
+        }
+        if (count > 0) {
+            document.write(inputText + " trùng " + count+ " lần")
+        } else {
+            document.write("-1")
+        }
+    }
+
+    checkArray(inputArray)
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputStar= prompt("Nhap ngoi sao");
+    var star =["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe","Regulus"];
+    var constel =["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo"]
+    convert(inputStar)
+    function convert(string) {
+        let stt = false
+        for (let i = 0; i < star.length; i++) {
+            if (string.toLowerCase() == star[i].toLowerCase()) {
+                stt = true;
+                document.write(constel[i])
+                break
+            } else {
+                stt = false
+            }
+        }
+        if (stt == false) {
+            document.write("Khong tim thay")
+        }
+    }
+</script>
+</body>
+</html>
