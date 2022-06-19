@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let spt = parseInt(prompt("nhap so pt"))
+    let array = [];
+    for (let i = 0; i <spt; i++){
+        let input1 = parseInt(prompt("nhap so"));
+        array.push(input1);
+    }
+    function check(array) {
+        for (let i = 0; i < array.length; i++){
+            let count = 0;
+            for (let j = 0; j < array.length; j++ ){
+                if (array[i]===array[j]){
+                    count++
+                }
+            }
+            console.log(array[i] + " xuat hien "+count + " lan")
+        }
+
+    }
+    check(array)
+
+</script>
+</body>
+</html>

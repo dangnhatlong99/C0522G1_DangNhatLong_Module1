@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+<script>
+    //ham check so ng to
+    function checkPrime(number) {
+        let count = 0;
+        for(let i = 1;i<= number;i++) {
+            if (number%i===0){
+                count++
+            }
+        }
+        if (count===2){
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    //nhap so dau vao
+    let inputNum = parseInt(prompt("Nhập số bất kỳ"))
+
+    //ham in ra ket qua
+    function result(number) {
+        for (let i =0; i<=number;i++){
+            if (checkPrime(i)===false){
+                document.write(i+",")
+            }
+        }
+    }
+    result(inputNum)
+
+
+</script>
+</body>
+</html>
