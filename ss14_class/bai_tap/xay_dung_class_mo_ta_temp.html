@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = parseInt(prompt("Nhap nhiet do"))
+    class Temp{
+        constructor(celius) {
+            this.celius = celius
+        }
+        getFahrenheit(){
+            return 9/5 * this.celius +32;
+        }
+        getKelvins(){
+            return this.celius + 273.15;
+        }
+    }
+    let temperature = new Temp(input);
+    let my_fahrenheit = temperature.getFahrenheit();
+    let my_kelvins = temperature.getKelvins();
+
+    document.write("Nhiệt độ K: " + my_kelvins + "<br>"
+        + "Nhiệt độ F: " + my_fahrenheit)
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let width = parseInt(prompt("dài"))
+    let height = parseInt(prompt("rộng"))
+
+    class Rectangle {
+        constructor(width, height) {
+            this.getWidth = width;
+            this.getHeight = height;
+        }
+
+        getWidth() {
+            return width;
+        }
+
+        getHeight() {
+            return height;
+        }
+
+        getPerimeter() {
+            return (width + height) * 2;
+        }
+
+        getArea() {
+            return width * height;
+        }
+    }
+
+    let Rec = new Rectangle(width, height);
+    let p = Rec.getPerimeter()
+    let a = Rec.getArea()
+    document.write("chu vi hình chữ nhật " + p + "<br>" + "diện tích hình chữ nhật là " + a)
+</script>
+<p></p>
+<canvas id="retangle" style="background-color: antiquewhite" width="300" height="100"></canvas>
+</body>
+</html>
