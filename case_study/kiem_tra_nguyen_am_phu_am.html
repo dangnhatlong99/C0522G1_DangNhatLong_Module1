@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let input = prompt("Nhap tu bat ky")
+  let vowel= ["o","i","u","a","e"]
+  let stt = false;
+  for (let i=0;i<vowel.length;i++){
+    if (input.toLowerCase()=== vowel[i].toLowerCase()){
+      stt = true
+      document.write(input+"  là ký tự nguyên âm")
+      break
+    }else {
+      stt = false
+    }
+  }if (stt === false){
+    document.write(input+ " không là là ký tự nguyên âm")
+  }
+</script>
+</body>
+</html>

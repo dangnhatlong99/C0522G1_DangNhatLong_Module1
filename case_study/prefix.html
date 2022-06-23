@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prefiax</title>
+</head>
+<body>
+<script>
+  function prefixSum(arr){
+    let newArr= []
+    for (let i =0;i<arr.length;i++){
+        newArr[i]=0;
+        for (let j=0;j<i+1;j++){
+          newArr[i]+= arr[j];
+        }
+
+    }return newArr
+  }
+  document.write(prefixSum([1,2,3]))
+</script>
+</body>
+</html>
