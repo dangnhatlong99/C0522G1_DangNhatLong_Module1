@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><input type="text" id="display"></p>
+<span>
+    <button type="button" onclick="trans()" id="convert">Chuyển đổi</button>
+</span>
+<span>
+    <p id="result"></p>
+</span>
+<script>
+    let num = ["1", "2", "3","4","5","6","7","8","9","10"];
+    let word = ["Một", "Hai", "Ba","Bốn","Năm","Sáu","Bảy","Tám","Chín","Mười"]
+
+    function trans() {
+        let string = document.getElementById("display").value.toLowerCase();
+        let stt = false
+        for (let i = 0; i < num.length; i++) {
+            if (string === num[i].toLowerCase()) {
+                stt = true;
+                document.getElementById("result").innerText = word[i]
+                break
+            } else {
+                stt = false
+            }
+        }
+        if (stt == false) {
+            document.getElementById("result").innerText = "K tim thay"
+        }
+    }
+
+</script>
+</body>
+</html>

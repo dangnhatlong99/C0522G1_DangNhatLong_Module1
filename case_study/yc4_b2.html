@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function differentSymbolsNaive(string) {
+        let array = [];
+        for (let i=0; i<string.length; i++) {
+            let index = 0;
+            for (let j=0; j<array.length; j++) {
+                if (string[i]===array[j]) {
+                    index++;
+                }
+            }
+            if (index===0) {
+                array.push(string[i]);
+            }
+        }
+        return array;
+    }
+    let string = prompt("Nhập chuỗi bất kì: ");
+    document.write("Chuỗi đã nhập: " + string + "<br>");
+    document.write("Các kí tự khác nhau trong chuỗi: " + differentSymbolsNaive(string) + "<br>");
+    document.write("Số kí tự khác nhau trong chuỗi: " + differentSymbolsNaive(string).length);
+</script>
+</body>
+</html>

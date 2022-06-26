@@ -6,11 +6,44 @@
 </head>
 <body>
 <script>
-  function findMissNum(array1,array2){
-    var array1Size= array1.length;
-    var array2Size= array2.length;
-    for (let i =0;i)
-  }
+    function checkArray(arrayA, arrayB) {
+        let arrayC = [];
+        for (let i=0; i<arrayB.length; i++) {
+            let count = 0;
+            for (let j=0; j<arrayA.length; j++) {
+                if (arrayB[i] === arrayA[j]) {
+                    count++;
+                }
+            }
+            if (count === 0) {
+                arrayC.push(arrayB[i]);
+            }
+        }
+        let max = arrayC[0];
+        for(let i = 0; i< arrayC.length; i++){
+            for(let j =0; j <=i; j++){
+                if(arrayC[i] < arrayC[j]){
+                    max = arrayC[i];
+                    arrayC[i] = arrayC[j];
+                    arrayC[j] = max
+                }
+            }
+        }
+        return arrayC;
+    }
+    //let arrayA = [7,2,5,3,5,3];
+    let arrayA = [];
+    for(let i = 0; i < 5; i++){
+        arrayA[i] = parseInt(prompt('Nhập số nguyên vào mảng 1:'));
+    }
+    //let arrayB = [7,2,5,8,4,6,3,5,3];
+    let arrayB = [];
+    for(let i = 0; i < 9; i++){
+        arrayB[i] = parseInt(prompt('Nhập số nguyên vào mảng 2:'));
+    }
+    document.write(arrayA + '<br>' + '<br>');
+    document.write(arrayB + '<br>' + '<br>');
+    document.write("Kết quả: " +checkArray(arrayA, arrayB));
 </script>
 </body>
 </html>
